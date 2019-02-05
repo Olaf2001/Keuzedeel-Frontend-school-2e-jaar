@@ -1,0 +1,46 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    align-items: stretch;
+}
+
+.div1 {
+    background-color: red;
+    flex: 0 0 35%;
+}
+
+.right-side {
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-side {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.split-side {
+    flex: 0 0 45%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2 {
+    background-color: turquoise;
+    flex: 0 0 45%;
+}
+
+.div3 {
+    background-color: orange;
+    flex: 0 0 45%;
+} 
+
+.div4, .div5 {
+    background-color: greenyellow;
+    flex: 0 0 45%;
+}

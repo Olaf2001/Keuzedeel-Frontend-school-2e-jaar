@@ -8,4 +8,8 @@ function navigation() {
     document.getElementById('nav').innerHTML = nav;
 }
 
-window.onload = navigation;
+function makeevents() {
+    navigation();
+}
+
+window.onload = makeevents;

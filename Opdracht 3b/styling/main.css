@@ -35,10 +35,45 @@ body {
     width: 80%;
     height: auto;
     margin-left: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .slider {
     background: linear-gradient(to bottom, #111111, #ffffff);
     width: 100%;
     border-top: 1px solid chartreuse;
+}
+
+/* Section blokken */
+
+.block, .blockInvert {
+    padding: 100px 10%;
+    display: flex;
+}
+
+.block {
+    background-color: #ffffff;
+    color: #111;
+}
+
+.block .rightSide {
+    width: 60%;
+}
+
+.block .leftSide {
+    width: 40%;
+}
+
+.blockInvert {
+    background-color: #111;
+    color: #fff;
+}
+
+.blockInvert .rightSide {
+    width: 40%;
+}
+
+.blockInvert .leftSide {
+    width: 60%;
 }

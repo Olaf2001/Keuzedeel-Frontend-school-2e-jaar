@@ -11,12 +11,11 @@ function next() {
     if (number >= 5) {
         number = 1;
     }
-    document.getElementById('slider').innerHTML = "<img class='slideshow__image' src=" + image[number] + ">";
+    document.getElementById('slider').innerHTML = "<img class='sliderImage' src=" + image[number] + ">";
 }
 
-function makeevents() {
+window.addEventListener("load", function makeevents() { 
     number = 1;
-    document.getElementById("slider").innerHTML = "<img class='slideshow__image' src=" + image[1] + ">";
+    document.getElementById("slider").innerHTML = "<img class='sliderImage' src=" + image[1] + ">";
     automatic = setInterval(next, 5000);
-}
-window.onload=makeevents;
+})

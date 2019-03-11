@@ -8,8 +8,6 @@ function navigation() {
     document.getElementById('nav').innerHTML = nav;
 }
 
-function makeevents() {
+window.addEventListener("load", function makeevents() { 
     navigation();
-}
-
-window.onload = makeevents;
+})

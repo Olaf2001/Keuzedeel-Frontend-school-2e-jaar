@@ -28,3 +28,17 @@ body {
 .nav-link:hover {
     color: chartreuse;
 }
+
+/* slider */
+
+.sliderImage {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.slider {
+    background: linear-gradient(to bottom, #111111, #ffffff);
+    width: 100%;
+    border-top: 1px solid chartreuse;
+}

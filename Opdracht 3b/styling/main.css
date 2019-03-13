@@ -9,9 +9,15 @@ body {
     padding: 0;
 }
 
+.subtitle {
+    font-size: 22px;
+    color: chartreuse;
+}
+
 .nav {
     width: 100%;
     background: linear-gradient(to bottom left, #7fff00, #111111 35%);
+    border-bottom: 1px solid chartreuse;
 }
 
 .nav-links-list {
@@ -48,7 +54,6 @@ body {
 .slider {
     background: linear-gradient(to bottom, #111111, #ffffff);
     width: 100%;
-    border-top: 1px solid chartreuse;
 }
 
 /* Section blokken */

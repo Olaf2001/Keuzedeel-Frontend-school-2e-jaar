@@ -1,3 +1,8 @@
+* {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -10,15 +15,16 @@ body {
 }
 
 .nav-links-list {
-    width: 100%;
+    width: calc(100% - 20px);
     list-style: none;
     display: flex;
-    padding: 30px 0;
+    padding: 10px 0 10px 20px;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-link {
-    padding: 5px;
+    padding: 15px;
     margin: 0 20px;
     color: white;
     text-decoration: none;
@@ -110,7 +116,7 @@ body {
 
 .footerTitle {
     color: chartreuse;
-    font-size: 16px;
+    font-size: 19px;
     text-align: center;
     font-weight: 700;
 }
@@ -159,4 +165,58 @@ body {
     background: #fffc00;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.searchbar {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px 0 40px;
+}
+
+.search {
+    width: 80%;
+    padding: 10px;
+    height: 30px;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    margin-right: 10px;
+    opacity: unset;
+}
+
+.search:focus {
+    color: chartreuse;
+    border-color: chartreuse;
+    transition-duration: 1s;
+}
+
+.searchButton {
+    width: 100px;
+    height: 53px;
+    padding: 10px;
+    margin-top: -1px;
+    border: 0;
+    border-radius: 5px;
+    color: #111;
+    background-color: chartreuse;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    border: 1px solid chartreuse;
+    background: none;
+    color: chartreuse;
+    transition-duration: 1s;
+}
+
+.navLogo {
+    height: 75px;
+}
+
+.footerLogo {
+    height: 170px;
 }

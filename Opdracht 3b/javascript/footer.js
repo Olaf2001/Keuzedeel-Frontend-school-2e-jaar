@@ -6,17 +6,17 @@ function footer() {
                                 <a class='listItemLink' href='contact.html'>Contact</a> \
                             </li> \
                             <li class='listItem'> \
-                                <a class='listItemLink' href='contact.html'>Projects</a> \
+                                <a class='listItemLink' href='projects.html'>Projects</a> \
                             </li> \
                             <li class='listItem'> \
-                                <a class='listItemLink' href='contact.html'>Home</a> \
+                                <a class='listItemLink' href='index.html'>Home</a> \
                             </li> \
                         </ul> \
                     </div> \
                     <div class='footerMiddle'> \
                         <form class='searchbar'> \
                             <input class='search' type='text' placeholder='zoek projecten'></input> \
-                            <button type='submit'>Zoeken</button> \
+                            <button class='searchButton' type='submit'>Zoeken</button> \
                         </form> \
                         <div class='socialMedia'> \
                             <a href='#' class='fa fa-facebook'></a> \
@@ -26,7 +26,7 @@ function footer() {
                         </div> \
                     </div> \
                     <div class='logo'> \
-                        <img src='logo.png' alt='logo'></img> \
+                        <img class='footerLogo' src='../images/logo.png' alt='logo'></img> \
                     </div>";
 
 

@@ -225,3 +225,20 @@ body {
 .footerLogo {
     height: 170px;
 }
+
+/* project pagina */
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 200px;
+    grid-gap: 20px; 
+    width: 80%;
+    margin: 100px auto;
+}
+
+.projectBlock {
+    background-color: #111;
+    color: white;
+    text-align: center;
+}

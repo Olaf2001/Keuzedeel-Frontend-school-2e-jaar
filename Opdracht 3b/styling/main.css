@@ -245,7 +245,15 @@ body {
     margin: 100px auto;
 }
 
-.projectBlock {
+.contactGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px; 
+    width: 80%;
+    margin: 100px auto;
+}
+
+.projectBlock, .contactBlock {
     background: linear-gradient(to top left, #7fff00 0%, #111111 30%);
     color: white;
     text-align: center;
@@ -259,5 +267,14 @@ body {
     color: chartreuse;
     border: 1px solid chartreuse;
     transition-duration: 1s;
-;
+}
+
+.contactBlock:nth-child(3) {
+    grid-row: 1/ span 2;
+    grid-column: 3/ span 1;
+}
+
+.smallTitle {
+    font-size: 18px;
+    color: chartreuse;
 }

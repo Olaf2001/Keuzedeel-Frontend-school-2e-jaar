@@ -228,17 +228,36 @@ body {
 
 /* project pagina */
 
+.subTitle {
+    font-size: 22px;
+    color: chartreuse;
+    margin: 0;
+    padding-top: 100px;
+    width: 100% - 40px;
+    text-align: center;
+}
+
 .projectsGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 200px;
     grid-gap: 20px; 
     width: 80%;
     margin: 100px auto;
 }
 
 .projectBlock {
-    background-color: #111;
+    background: linear-gradient(to top left, #7fff00 0%, #111111 30%);
     color: white;
     text-align: center;
+    padding: 100px 0;
+    border-radius: 3px;
+    border: 1px solid #111;
+}
+
+.projectBlock:hover {
+    background: linear-gradient(to top left, #ffffff 0%, #111111 30%);
+    color: chartreuse;
+    border: 1px solid chartreuse;
+    transition-duration: 1s;
+;
 }

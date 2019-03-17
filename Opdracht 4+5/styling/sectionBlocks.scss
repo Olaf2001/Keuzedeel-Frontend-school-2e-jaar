@@ -1,5 +1,10 @@
 @import 'standardStyling';
 
+.subtitle {
+  font-size: 22px;
+  color: $accentColor;
+}
+
 .block, .blockInvert {
   padding: 100px 10%;
   display: flex;
@@ -26,7 +31,7 @@
     width: 40%;
   }
 
-  .& .leftSide {
+  & .leftSide {
     width: 60%;
   }
 }

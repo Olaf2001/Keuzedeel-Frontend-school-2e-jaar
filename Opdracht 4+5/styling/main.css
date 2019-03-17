@@ -1,0 +1,271 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10%;
+  background: linear-gradient(to top left, chartreuse 0%, #111 30%);
+  padding: 50px 30px;
+  color: #fff;
+  align-content: center;
+}
+
+.linksList {
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.listItemLink {
+  text-decoration: none;
+  color: white;
+}
+.listItemLink:hover {
+  text-decoration: underline;
+  color: chartreuse;
+}
+
+.footerTitle {
+  color: chartreuse;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa {
+  font-size: 26px;
+  margin: 0 10px 0 0;
+  color: #111;
+  text-decoration: none;
+  background: #b7b6b6;
+  padding: 15px;
+  width: 26px;
+  text-align: center;
+  border-radius: 50%;
+}
+.fa:hover {
+  transition-duration: 1s;
+}
+.fa::before {
+  font-size: 26px;
+}
+.fa-facebook:hover {
+  background: #3B5998;
+  color: #fff;
+}
+.fa-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+}
+.fa-youtube:hover {
+  background: #bb0000;
+  color: #fff;
+}
+.fa-snapchat-ghost:hover {
+  background: #fffc00;
+  color: #fff;
+  text-shadow: -1px 0 #111, 0 1px #111, 1px 0 #111, 0 -1px #111;
+}
+
+.searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 40px;
+}
+
+.search {
+  width: 80%;
+  padding: 10px;
+  height: 30px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  margin-right: 10px;
+  opacity: unset;
+}
+.search:focus {
+  color: chartreuse;
+  border-color: chartreuse;
+  transition-duration: 1s;
+}
+
+.searchButton {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: 0;
+  border-radius: 5px;
+  color: #111;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.searchButton:hover {
+  border: 1px solid chartreuse;
+  background: none;
+  color: chartreuse;
+  transition-duration: 1s;
+}
+
+.navLogo {
+  height: 75px;
+}
+
+.footerLogo {
+  height: 170px;
+}
+
+.nav {
+  width: 100%;
+  background: linear-gradient(to bottom left, chartreuse, #111 35%);
+  border-bottom: 1px solid chartreuse;
+}
+
+.nav-links-list {
+  width: calc(100% - 20px);
+  list-style: none;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 15px;
+  margin: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: chartreuse;
+}
+
+.slider {
+  background: linear-gradient(to bottom, #111, #fff);
+  width: 100%;
+}
+.sliderImage {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: chartreuse;
+}
+
+.block, .blockInvert {
+  padding: 100px 10%;
+  display: flex;
+}
+
+.block {
+  background-color: #fff;
+  color: #111;
+}
+.block .rightSide {
+  width: 60%;
+}
+.block .leftSide {
+  width: 40%;
+}
+
+.blockInvert {
+  background-color: #111;
+  color: #fff;
+}
+.blockInvert .rightSide {
+  width: 40%;
+}
+.blockInvert .leftSide {
+  width: 60%;
+}
+
+.subTitle {
+  font-size: 22px;
+  color: chartreuse;
+  margin: 0;
+  padding-top: 100px;
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.projectBlock, .contactBlock {
+  background: linear-gradient(to top left, chartreuse 0%, #111 30%);
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  border-radius: 3px;
+  border: 1px solid #111;
+}
+
+.projectBlock:hover {
+  background: linear-gradient(to top left, #fff 0%, #111 30%);
+  color: chartreuse;
+  border: 1px solid chartreuse;
+  transition-duration: 1s;
+}
+
+.contactBlock:nth-child(3) {
+  grid-row: 1/span 2;
+  grid-column: 3/span 1;
+}
+
+.smallTitle {
+  font-size: 18px;
+  color: chartreuse;
+}
+
+.sideBlock {
+  border-top: 1px solid #111;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 10%;
+  background: linear-gradient(to top left, #fff 60%, chartreuse 80%);
+}
+
+* {
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titleForDocumentOutline {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

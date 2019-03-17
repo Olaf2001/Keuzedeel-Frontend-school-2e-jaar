@@ -5,7 +5,7 @@ function makeProjects(projectName, linkToProjects, description) {
     
     this.getProject = function() {
         var project =   "<div id='"+this.projectName+"' class='projectBlock'> \
-                           "+ this.projectName +" \
+                           <h3 class='smallTitle'>" + this.projectName + "</h3> \
                         </div>";
                         // <div id='modal"+this.projectName+"' class='modal'> \
                         //     <p>"+ this.description+"</p> \

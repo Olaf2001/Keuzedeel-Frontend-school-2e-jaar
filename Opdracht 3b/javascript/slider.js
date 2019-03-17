@@ -11,7 +11,8 @@ function next() {
     if (number >= 5) {
         number = 1;
     }
-    document.getElementById('slider').innerHTML = "<img class='sliderImage' src=" + image[number] + ">";
+    document.getElementById('slider').innerHTML = " <h2 class='titleForDocumentOutline'>Image Slider</h2> \
+                                                    <img class='sliderImage' src=" + image[number] + ">";
 }
 
 window.addEventListener("load", function makeevents() { 

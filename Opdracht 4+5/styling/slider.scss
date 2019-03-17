@@ -1,0 +1,14 @@
+@import 'standardStyling';
+
+.slider {
+  background: linear-gradient(to bottom, $black, $white);
+  width: 100%;
+
+  &Image {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

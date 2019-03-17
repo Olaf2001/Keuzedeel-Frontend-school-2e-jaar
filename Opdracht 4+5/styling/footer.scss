@@ -1,0 +1,137 @@
+@import 'standardStyling';
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10%;
+  background: linear-gradient(to top left, $accentColor 0%, $black 30%);
+  padding: 50px 30px;
+  color: $white;
+  align-content: center;
+}
+
+.linksList {
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.listItemLink {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+  text-decoration: underline;
+  color: $accentColor;
+  }
+}
+
+.footerTitle {
+  color: $accentColor;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa {
+  font-size: 26px;
+  margin: 0 10px 0 0;
+  color: $black;
+  text-decoration: none;
+  background: $grey;
+  padding: 15px;
+  width: 26px;
+  text-align: center;
+  border-radius: 50%;
+
+  &:hover {
+    transition-duration: 1s;
+  }
+
+
+  &::before {
+    font-size: 26px;
+  }
+
+  &-facebook:hover {
+    background: $facebookBlue;
+    color: $white;
+  }
+
+  &instagram:hover {
+    background: $instagramBackground;
+    color: $white;
+  }
+
+  &youtube:hover {
+    background: $youtTubeRed;
+    color: $white;
+  }
+
+  &snapchat-ghost:hover {
+    background: $snapchatYellow;
+    color: $white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}
+
+.searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 40px;
+}
+
+.search {
+  width: 80%;
+  padding: 10px;
+  height: 30px;
+  background: none;
+  color: $white;
+  border: none;
+  border-bottom: 1px solid $white;
+  font-size: 16px;
+  margin-right: 10px;
+  opacity: unset;
+
+  &:focus {
+    color: $accentColor;
+    border-color: $accentColor;
+    transition-duration: 1s;
+  }
+}
+
+.searchButton {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: 0;
+  border-radius: 5px;
+  color: $black;
+  background-color: $accentColor;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $accentColor;
+    background: none;
+    color: $accentColor;
+    transition-duration: 1s;
+  }
+}
+
+.navLogo {
+  height: 75px;
+}
+
+.footerLogo {
+  height: 170px;
+}

@@ -1,0 +1,32 @@
+@import 'standardStyling';
+
+.block, .blockInvert {
+  padding: 100px 10%;
+  display: flex;
+}
+
+.block {
+  background-color: $white;
+  color: $black;
+
+  & .rightSide {
+    width: 60%;
+  }
+
+  & .leftSide {
+    width: 40%;
+  }
+}
+
+.blockInvert {
+  background-color: $black;
+  color: $white;
+
+  & .rightSide {
+    width: 40%;
+  }
+
+  .& .leftSide {
+    width: 60%;
+  }
+}

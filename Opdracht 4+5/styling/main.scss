@@ -1,0 +1,20 @@
+@import 'footer.scss';
+@import 'navigation.scss';
+@import 'slider.scss';
+@import 'sectionBlocks.scss';
+@import 'gridBlocks.scss';
+
+* {
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titleForDocumentOutline {
+  display: none;
+}

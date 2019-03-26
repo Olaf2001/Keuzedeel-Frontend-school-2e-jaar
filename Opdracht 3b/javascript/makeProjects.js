@@ -6,13 +6,15 @@ function MakeProjects(projectName, linkToProjects, description) {
     this.project = "<div id='" + this.projectName + "' class='projectBlock'> \
                       <h3 class='smallTitle'>" + this.projectName + "</h3> \
                     </div> \
-                   <div id='modal" + this.projectName + "' class='modal'> \
-                        <h3 class='smallTitle'>" + this.projectName + "</h3> \
-                        <p>" + this.description + "</p> \
-                        <div class='modalBottom'> \
-                            <a href='" + this.linkToProject + "'> \
-                                Ga naar Github om het project te bekijken \
-                            </a> \
+                   <div id='modal" + this.projectName + "' class='modal'>\
+                        <div class='modalContent'>\
+                            <h3 class='smallTitle'>" + this.projectName + "</h3> \
+                            <p>" + this.description + "</p> \
+                            <div class='modalBottom'> \
+                                <a href='" + this.linkToProject + "'> \
+                                    Ga naar Github om het project te bekijken \
+                                </a> \
+                            </div> \
                         </div> \
                     </div>";
 
@@ -82,13 +84,17 @@ projectNames.forEach(OpenModal);
 
 function OpenModal(value) {
     document.getElementById(value).onclick = seeModal;
+
+    function seeModal() {
+        document.getElementById('modal'+this.id).style.display = 'block';
+
+        var modal = document.getElementById('modal'+this.id);
+
+        window.onclick = function(event) {
+            if (event.target === modal)
+            {
+                modal.style.display = "none";
+            }
+        };
+    }
 }
-
-function seeModal() {
-    document.getElementById('modalProject1').style.display = 'block';
-}
-
-
-window.addEventListener("load", function makeevents() {
-    // document.getElementById('Project1').onclick = seeModal;
-});

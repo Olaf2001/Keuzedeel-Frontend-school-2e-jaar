@@ -354,5 +354,14 @@ body {
 
 .modalBottom .button {
     width: 200px;
-    margin-left: 50px;
+    margin: 0 0 0 50px;
+}
+
+.link {
+    color: #222;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: chartreuse;
 }

@@ -12,7 +12,7 @@ function MakeProjects(projectName, linkToProjects, description) {
                             <p class='modalDescription'>" + this.description + "</p> \
                             <div class='modalBottom'> \
                                 <button id='modalButton' class='button'>Sluit Pop-up</button> \
-                                <a href='" + this.linkToProject + "'> \
+                                <a class='link' href='" + this.linkToProject + "'> \
                                     Ga naar Github om het project te bekijken \
                                 </a>\
                             </div> \

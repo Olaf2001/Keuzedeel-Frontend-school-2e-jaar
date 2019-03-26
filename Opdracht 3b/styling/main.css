@@ -203,7 +203,7 @@ body {
     transition-duration: 1s;
 }
 
-.searchButton, button {
+.searchButton, .button {
     width: 100px;
     height: 53px;
     padding: 10px;
@@ -321,8 +321,38 @@ body {
 }
 
 .modalContent {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
+    background: linear-gradient(to top right, #7fff00 0%, #ffffff 55%);
+    margin: 5% auto 15%;
+    border: 1px solid chartreuse;
     width: 80%;
+    border-radius: 15px;
+}
+
+.modalContent .smallTitle {
+    text-align: center;
+    width: 100%;
+    background-color: #111;
+    margin: 0 0 10px;
+    padding: 15px 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.modalDescription {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.modalBottom {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 3px solid chartreuse;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.modalBottom .button {
+    width: 200px;
+    margin-left: 50px;
 }

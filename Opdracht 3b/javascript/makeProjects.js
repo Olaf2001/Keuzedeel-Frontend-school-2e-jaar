@@ -9,11 +9,12 @@ function MakeProjects(projectName, linkToProjects, description) {
                    <div id='modal" + this.projectName + "' class='modal'>\
                         <div class='modalContent'>\
                             <h3 class='smallTitle'>" + this.projectName + "</h3> \
-                            <p>" + this.description + "</p> \
+                            <p class='modalDescription'>" + this.description + "</p> \
                             <div class='modalBottom'> \
+                                <button id='modalButton' class='button'>Sluit Pop-up</button> \
                                 <a href='" + this.linkToProject + "'> \
                                     Ga naar Github om het project te bekijken \
-                                </a> \
+                                </a>\
                             </div> \
                         </div> \
                     </div>";

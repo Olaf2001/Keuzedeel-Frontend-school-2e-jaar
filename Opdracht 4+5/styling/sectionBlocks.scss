@@ -11,8 +11,12 @@
 }
 
 .block {
-  background-color: $white;
+  background: linear-gradient(to top right, $accentColor 0%, $white 55%);
   color: $black;
+
+  &:nth-child(3) {
+    background: linear-gradient(to bottom right, $accentColor 0%, $white 55%);
+  }
 
   & .rightSide {
     width: 60%;
@@ -35,3 +39,4 @@
     width: 60%;
   }
 }
+

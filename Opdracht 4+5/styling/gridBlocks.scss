@@ -50,3 +50,63 @@
   font-size: 18px;
   color: $accentColor;
 }
+
+// styling for the modal
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+
+  &Content {
+    background: linear-gradient(to top right, $accentColor 0%, $white 55%);
+    margin: 5% auto 15%;
+    border: 1px solid $accentColor;
+    width: 80%;
+    border-radius: 15px;
+
+    & .smallTitle {
+      text-align: center;
+      width: 100%;
+      background-color: $black;
+      margin: 0 0 10px;
+      padding: 15px 0;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+
+  &Description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  &Bottom {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 3px solid $accentColor;
+    padding: 15px 0;
+    align-items: center;
+
+    & .button {
+      width: 200px;
+      margin: 0 0 0 50px;
+    }
+  }
+}
+
+.link {
+  color: #222;
+  text-decoration: underline;
+
+  &:hover {
+    color: $accentColor;
+  }
+}

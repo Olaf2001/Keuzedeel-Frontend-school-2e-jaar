@@ -19,3 +19,29 @@ body {
 .titleForDocumentOutline {
   display: none;
 }
+
+.img {
+  width: 70%;
+  border-radius: 5% 25%;
+}
+
+.button {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: 0;
+  border-radius: 5px;
+  color: $black;
+  background-color: $accentColor;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $accentColor;
+    background: none;
+    color: $accentColor;
+    transition-duration: 1s;
+  }
+}

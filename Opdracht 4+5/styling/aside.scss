@@ -1,9 +1,8 @@
 @import 'standardStyling';
 
 .sideBlock {
-  border-top: 1px solid $black;
   width: 80%;
   margin: 0 auto;
   padding: 100px 10%;
-  background: linear-gradient(to top left, $white 60%, $accentColor 80%);
+  background: linear-gradient(to top left, $accentColor 0%, $white 55%);
 }

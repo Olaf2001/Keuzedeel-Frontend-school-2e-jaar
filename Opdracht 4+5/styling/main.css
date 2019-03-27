@@ -173,8 +173,11 @@
 }
 
 .block {
-  background-color: #fff;
+  background: linear-gradient(to top right, chartreuse 0%, #fff 55%);
   color: #111;
+}
+.block:nth-child(3) {
+  background: linear-gradient(to bottom right, chartreuse 0%, #fff 55%);
 }
 .block .rightSide {
   width: 60%;
@@ -245,12 +248,63 @@
   color: chartreuse;
 }
 
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+.modalContent {
+  background: linear-gradient(to top right, chartreuse 0%, #fff 55%);
+  margin: 5% auto 15%;
+  border: 1px solid chartreuse;
+  width: 80%;
+  border-radius: 15px;
+}
+.modalContent .smallTitle {
+  text-align: center;
+  width: 100%;
+  background-color: #111;
+  margin: 0 0 10px;
+  padding: 15px 0;
+  border-radius: 15px 15px 0 0;
+}
+.modalDescription {
+  width: 80%;
+  margin: 20px auto;
+}
+.modalBottom {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 3px solid chartreuse;
+  padding: 15px 0;
+  align-items: center;
+}
+.modalBottom .button {
+  width: 200px;
+  margin: 0 0 0 50px;
+}
+
+.link {
+  color: #222;
+  text-decoration: underline;
+}
+.link:hover {
+  color: chartreuse;
+}
+
 .sideBlock {
-  border-top: 1px solid #111;
   width: 80%;
   margin: 0 auto;
   padding: 100px 10%;
-  background: linear-gradient(to top left, #fff 60%, chartreuse 80%);
+  background: linear-gradient(to top left, chartreuse 0%, #fff 55%);
 }
 
 * {
@@ -266,6 +320,31 @@ body {
 
 .titleForDocumentOutline {
   display: none;
+}
+
+.img {
+  width: 70%;
+  border-radius: 5% 25%;
+}
+
+.button {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: 0;
+  border-radius: 5px;
+  color: #111;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.button:hover {
+  border: 1px solid chartreuse;
+  background: none;
+  color: chartreuse;
+  transition-duration: 1s;
 }
 
 /*# sourceMappingURL=main.css.map */

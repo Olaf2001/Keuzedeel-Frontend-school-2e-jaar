@@ -3,11 +3,29 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 10%;
+  grid-gap: 20px;
   background: linear-gradient(to top left, $accentColor 0%, $black 30%);
   padding: 50px 30px;
   color: $white;
-  align-content: center;
+
+  @include tablet {
+    grid-template-columns: (2, auto);
+    justify-content: space-evenly;
+  }
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+}
+
+.footerLinks {
+  grid-column-start: 1;
+  grid-row-start: 1;
+
+  @include tablet {
+    grid-column-start: 1;
+    grid-row: 1 / span 1;
+  }
 }
 
 .linksList {
@@ -35,9 +53,24 @@
   font-weight: 700;
 }
 
+.socialMediaIcons {
+  grid-column: 1 / span 3;
+  grid-row-start: 2;
+
+  @include tablet {
+    grid-column: 1 / span 2;
+    grid-row-start: 3;
+  }
+
+  @include phone {
+    grid-column: 1 / span 1;
+  }
+}
+
 .socialMedia {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .fa {
@@ -78,6 +111,17 @@
     background: $snapchatYellow;
     color: $white;
     text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+  }
+}
+
+.footerSearchbar {
+  @include tablet {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+  }
+
+  @include phone {
+    grid-column: 1 / span 1;
   }
 }
 
@@ -127,10 +171,24 @@
   }
 }
 
-.navLogo {
-  height: 75px;
+.logo {
+  display: flex;
+  grid-column-start: 3;
+  grid-row-start: 1;
+
+  @include tablet {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  @include phone {
+    grid-column-start: 1;
+    grid-row-start: 4 ;
+  }
 }
 
 .footerLogo {
-  height: 170px;
+  height: 140px;
+  width: 240px;
+  margin: 0 auto;
 }

@@ -8,6 +8,10 @@
 .block, .blockInvert {
   padding: 100px 10%;
   display: flex;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }
 
 .block {
@@ -20,10 +24,29 @@
 
   & .rightSide {
     width: 60%;
+
+    @include tablet {
+      width: 100%;
+      order: 1;
+    }
   }
 
   & .leftSide {
     width: 40%;
+
+    @include tablet {
+      width: 40%;
+      order: 2;
+      margin: 20px auto 0;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include phone {
+      width: 60%;
+    }
   }
 }
 
@@ -33,10 +56,29 @@
 
   & .rightSide {
     width: 40%;
+
+    @include tablet {
+      width: 40%;
+      order: 2;
+      margin: 20px auto 0;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include phone {
+      width: 60%;
+    }
   }
 
   & .leftSide {
     width: 60%;
+
+    @include tablet {
+      width: 100%;
+      order: 1;
+    }
   }
 }
 

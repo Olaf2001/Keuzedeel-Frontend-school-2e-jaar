@@ -1,4 +1,6 @@
-$accentColor: chartreuse;
+//variables
+
+$accentColor: #f09433;
 $black: #111;
 $white: #fff;
 $grey: #b7b6b6;
@@ -7,3 +9,23 @@ $snapchatYellow:#fffc00;
 $facebookBlue: #3B5998;
 $youTubeRed: #bb0000;
 $instagramBackground: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+
+$tabletMaxSize: 1100px;
+$phoneMaxSize: 550px;
+
+//sizes
+
+@mixin tablet {
+  @media (max-width: $tabletMaxSize) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: $phoneMaxSize) {
+    @content;
+  }
+}
+
+//namespaces
+

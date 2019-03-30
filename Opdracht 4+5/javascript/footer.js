@@ -14,12 +14,14 @@ function footer() {
                             </li> \
                         </ul> \
                     </div> \
-                    <div class='footerMiddle'> \
+                    <div class='footerSearchbar'> \
                         <h3 class='titleForDocumentOutline'>Search Projects</h3> \
                         <form class='searchbar'> \
-                            <input class='search' type='text' placeholder='zoek projecten'></input> \
+                            <input class='search' type='text' placeholder='zoek projecten'> \
                             <button class='searchButton' type='submit'>Zoeken</button> \
                         </form> \
+                    </div> \
+                    <div class='socialMediaIcons'> \
                         <h3 class='titleForDocumentOutline'>Social Media</h3> \
                         <div class='socialMedia'> \
                             <a href='#' class='fa fa-facebook'></a> \
@@ -30,7 +32,7 @@ function footer() {
                     </div> \
                     <div class='logo'> \
                         <h3 class='titleForDocumentOutline'>Logo</h3> \
-                        <img class='footerLogo' src='../images/logo.png' alt='logo'></img> \
+                        <img class='footerLogo' src='../images/logo.png' alt='logo'> \
                     </div>";
 
 

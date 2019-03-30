@@ -27,7 +27,7 @@
 
 .contactGrid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, auto);
   grid-gap: 20px;
   width: 80%;
   margin: 100px auto;
@@ -41,7 +41,23 @@
   }
 }
 
-.projectBlock, .contactBlock {
+.asideGrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include tablet {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+}
+
+.projectBlock, .contactBlock, .asideBlock {
   background: linear-gradient(to top left, $accentColor 0%, $black 30%);
   color: $white;
   text-align: center;

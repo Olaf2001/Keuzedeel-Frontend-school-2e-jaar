@@ -33,6 +33,9 @@ function footer() {
                     <div class='logo'> \
                         <h3 class='titleForDocumentOutline'>Logo</h3> \
                         <img class='footerLogo' src='../images/logo.png' alt='logo'> \
+                    </div>\
+                    <div class='copyrightText'> \
+                        &copy; Olaf Kramer 2019\
                     </div>";
 
 

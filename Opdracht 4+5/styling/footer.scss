@@ -2,15 +2,19 @@
 
 .footer {
   display: grid;
+  width: 80%;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 20px;
+  grid-column-gap: 10%;
+  grid-row-gap: 10px;
   background: linear-gradient(to top left, $accentColor 0%, $black 30%);
-  padding: 50px 30px;
+  padding: 50px 10%;
   color: $white;
+  justify-content: center;
+
 
   @include tablet {
     grid-template-columns: (2, auto);
-    justify-content: space-evenly;
+    grid-column-gap: unset;
   }
 
   @include phone {
@@ -191,4 +195,24 @@
   height: 140px;
   width: 240px;
   margin: 0 auto;
+}
+
+.copyrightText {
+  color: $accentColor;
+  border-top: 2px solid $accentColor;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  grid-column: 1 / span 3;
+  grid-row-start: 3;
+
+  @include tablet {
+    grid-column-start: 1 / span 2;
+    grid-row-start: 4;
+  }
+
+  @include phone {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
 }

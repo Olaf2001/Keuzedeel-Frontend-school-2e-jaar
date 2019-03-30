@@ -4,13 +4,13 @@ function footer() {
                         <h3 class='footerTitle'>Links</h3> \
                         <ul class='linksList'> \
                             <li class='listItem'> \
+                                <a class='listItemLink' href='index.html'>Home</a> \
+                            </li> \
+                            <li class='listItem'> \
                                 <a class='listItemLink' href='contact.html'>Contact</a> \
                             </li> \
                             <li class='listItem'> \
                                 <a class='listItemLink' href='projects.html'>Projects</a> \
-                            </li> \
-                            <li class='listItem'> \
-                                <a class='listItemLink' href='index.html'>Home</a> \
                             </li> \
                         </ul> \
                     </div> \

@@ -17,8 +17,8 @@ function footer() {
                     <div class='footerSearchbar'> \
                         <h3 class='titleForDocumentOutline'>Search Projects</h3> \
                         <form class='searchbar'> \
-                            <input class='search' type='text' placeholder='zoek projecten'> \
-                            <button class='searchButton' type='submit'>Zoeken</button> \
+                            <input disabled class='search' type='text' placeholder='Zoekfunctie nog niet gereed'> \
+                            <button disabled class='searchButton' type='submit'>Zoeken</button> \
                         </form> \
                     </div> \
                     <div class='socialMediaIcons'> \

@@ -6,8 +6,11 @@
 @import 'aside.scss';
 
 * {
-  font-family: Calibri, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font: {
+    family: Calibri, Arial, Helvetica, sans-serif;
+    size: $font-size;
+  }
+
 }
 
 body {
@@ -22,7 +25,12 @@ body {
 
 .img {
   width: 70%;
-  border-radius: 5% 25%;
+
+  @if $image-styling == 'true' {
+    border-radius: 5% 25%;
+  } @else {
+    border-radius: 5px;
+  }
 }
 
 .button {
@@ -30,12 +38,14 @@ body {
   height: 53px;
   padding: 10px;
   margin-top: -1px;
-  border: 0;
+  border: none;
   border-radius: 5px;
   color: $black;
   background-color: $accentColor;
-  font-size: 16px;
-  font-weight: 900;
+  font: {
+    size: 16px;
+    weight: 900;
+  }
   cursor: pointer;
 
   &:hover {

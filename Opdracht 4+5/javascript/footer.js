@@ -1,6 +1,6 @@
 function footer() {
     var footer =    "<h2 class='titleForDocumentOutline'>Footer</h2> \
-                    <div class='footerlinks'> \
+                    <div class='footerLinks'> \
                         <h3 class='footerTitle'>Links</h3> \
                         <ul class='linksList'> \
                             <li class='listItem'> \
@@ -18,7 +18,7 @@ function footer() {
                         <h3 class='titleForDocumentOutline'>Search Projects</h3> \
                         <form class='searchbar'> \
                             <input disabled class='search' type='text' placeholder='Zoekfunctie nog niet gereed'> \
-                            <button disabled class='searchButton' type='submit'>Zoeken</button> \
+                            <button disabled class='button' type='submit'>Zoeken</button> \
                         </form> \
                     </div> \
                     <div class='socialMediaIcons'> \

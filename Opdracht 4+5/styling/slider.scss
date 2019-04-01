@@ -8,8 +8,10 @@
     width: 80%;
     height: auto;
     margin-left: 10%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: {
+      bottom-left-radius: 20px;
+      bottom-right-radius: 20px;
+    }
 
     @include tablet {
       width: 100%;

@@ -13,6 +13,10 @@ $instagramBackground: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,
 $tabletMaxSize: 1100px;
 $phoneMaxSize: 550px;
 
+$font-size: 16px;
+$h2-title-size: $font-size + 3px;
+$h3-title-size: $h2-title-size + 3px;
+
 //sizes
 
 @mixin tablet {
@@ -27,5 +31,31 @@ $phoneMaxSize: 550px;
   }
 }
 
-//namespaces
+//mixins
+
+@mixin setGridBlock($column-start, $column-span, $row-start, $row-span) {
+  grid: {
+    column: $column-start / span $column-span;
+    row: $row-start / span $row-span;
+  }
+}
+
+//if else statement, vul achter elke variabel true of false in.
+
+$image-styling: 'true';
+
+
+
+//notes
+// de if else statement in de main.scss is eigenlijk nutteloos, want het zou makkelijker zijn om
+// zelf de code aan te passen, maar in de opdracht staat dat je de if - else moet gebruiken dus
+// vandaar.
+// Voor de for loop geld eigenlijk hetzelfde. Deze is alleen handig als je classnamen hebt met
+// link1, link2, link3 enz. Dit is niet handig, want dan wordt er meer code gecompiled, als dat je
+// ze allemaal dezelfde classname geef. Als je namelijk een specifiek blok wilt stijlen kan je ook
+// &nth-child(getal van de hoeveelste class) gebruiken, wat dus het schrijven van de for loop doet
+// vergeten en minder code gebruikt. Nog een nadeel aan de forloop is als je de class nog een keer
+// wil gebruiken in de html moet je ook de for loop aanpassen voor de stijling en dat is met
+// dezelfde classnaam gebruiken minder werk.
+
 

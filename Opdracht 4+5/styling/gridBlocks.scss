@@ -1,0 +1,158 @@
+@import 'standardStyling';
+
+.subTitle {
+  font-size: 22px;
+  color: $accentColor;
+  margin: 0;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.projectsGrid {
+  display: grid;
+
+  grid: {
+    template-columns: repeat(4, auto);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  width: 80%;
+  margin: 100px auto;
+
+  @include tablet {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+}
+
+.contactGrid {
+  @extend .projectsGrid;
+  grid-template-columns: repeat(3, auto);
+
+  @include tablet {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+}
+
+.asideGrid {
+  @extend .projectsGrid;
+  grid-template-columns: repeat(4, auto);
+  width: 100%;
+
+  @include tablet {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include phone {
+    grid-template-columns: auto;
+  }
+}
+
+@each $blockName in project, contact, aside {
+  .#{$blockName}Block {
+    background: linear-gradient(to top left, $accentColor 0%, $black 30%);
+    color: $white;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 3px;
+    border: 1px solid $black;
+  }
+}
+
+.projectBlock:hover {
+  background: linear-gradient(to top left, $white 0%, $black 30%);
+  color: $accentColor;
+  border: 1px solid $accentColor;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.contactBlock:nth-child(3) {
+  @include setGridBlock(3,1,1,2);
+
+  @include tablet {
+    @include setGridBlock(1,2,3,1);
+  }
+
+  @include phone {
+    @include setGridBlock(1,1,2,5);
+  }
+}
+
+.smallTitle {
+  font-size: 18px;
+  color: $accentColor;
+}
+
+// styling for the modal
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+
+  &Content {
+    background: linear-gradient(to top right, $accentColor 0%, $white 55%);
+    margin: 5% auto 15%;
+    border: 1px solid $accentColor;
+    width: 80%;
+    border-radius: 15px;
+
+    & .smallTitle {
+      text-align: center;
+      width: 100%;
+      background-color: $black;
+      margin: 0 0 10px;
+      padding: 15px 0;
+      border-radius: 15px 15px 0 0;
+    }
+
+
+    @include phone {
+      width: 90%;
+    }
+  }
+
+  &Description {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  &Bottom {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 3px solid $accentColor;
+    padding: 15px 0;
+    align-items: center;
+
+    & .button {
+      width: 200px;
+      margin: 0 0 0 50px;
+    }
+  }
+}
+
+.link {
+  color: #222;
+  text-decoration: underline;
+
+  &:hover {
+    color: $accentColor;
+  }
+}

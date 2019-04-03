@@ -1,0 +1,136 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10%;
+  background: linear-gradient(to top left, #7fff00 0%, #111111 30%);
+  padding: 50px 30px;
+  color: white;
+  align-content: center;
+}
+
+.linksList {
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.listItemLink {
+  text-decoration: none;
+  color: white;
+}
+
+.listItemLink:hover {
+  text-decoration: underline;
+  color: chartreuse;
+}
+
+.footerTitle {
+  color: chartreuse;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa {
+  font-size: 26px;
+  margin: 0 10px 0 0;
+  color: #000000;
+  text-decoration: none;
+  background: #b7b6b6;
+  padding: 15px;
+  width: 26px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  transition-duration: 1s;
+}
+
+.fa::before {
+  font-size: 26px;
+}
+
+.fa-facebook:hover {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-snapchat-ghost:hover {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.searchbar {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 40px;
+}
+
+.search {
+  width: 80%;
+  padding: 10px;
+  height: 30px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  margin-right: 10px;
+  opacity: unset;
+}
+
+.search:focus {
+  color: chartreuse;
+  border-color: chartreuse;
+  transition-duration: 1s;
+}
+
+.searchButton {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: 0;
+  border-radius: 5px;
+  color: #111;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  border: 1px solid chartreuse;
+  background: none;
+  color: chartreuse;
+  transition-duration: 1s;
+}
+
+.navLogo {
+  height: 75px;
+}
+
+.footerLogo {
+  height: 170px;
+}
+
+/*# sourceMappingURL=footer.css.map */

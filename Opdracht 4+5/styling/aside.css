@@ -1,0 +1,9 @@
+.sideBlock {
+  border-top: 1px solid #111;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 10%;
+  background: linear-gradient(to top left, #fff 60%, chartreuse 80%);
+}
+
+/*# sourceMappingURL=aside.css.map */

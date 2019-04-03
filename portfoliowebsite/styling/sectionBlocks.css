@@ -1,0 +1,81 @@
+.subtitle {
+  font-size: 22px;
+  color: #f09433;
+}
+
+.block, .blockInvert {
+  padding: 100px 10%;
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .block, .blockInvert {
+    flex-wrap: wrap;
+  }
+}
+
+.block {
+  background: linear-gradient(to top right, #f09433 0%, #fff 55%);
+  color: #111;
+}
+.block:nth-child(3) {
+  background: linear-gradient(to bottom right, #f09433 0%, #fff 55%);
+}
+.block .rightSide {
+  width: 60%;
+}
+@media (max-width: 1100px) {
+  .block .rightSide {
+    width: 100%;
+    order: 1;
+  }
+}
+.block .leftSide {
+  width: 40%;
+}
+@media (max-width: 1100px) {
+  .block .leftSide {
+    order: 2;
+    margin: 20px auto 0;
+  }
+  .block .leftSide img {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .block .leftSide {
+    width: 60%;
+  }
+}
+
+.blockInvert {
+  background-color: #111;
+  color: #fff;
+}
+.blockInvert .rightSide {
+  width: 40%;
+}
+@media (max-width: 1100px) {
+  .blockInvert .rightSide {
+    order: 2;
+    margin: 20px auto 0;
+  }
+  .blockInvert .rightSide img {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .blockInvert .rightSide {
+    width: 60%;
+  }
+}
+.blockInvert .leftSide {
+  width: 60%;
+}
+@media (max-width: 1100px) {
+  .blockInvert .leftSide {
+    width: 100%;
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=sectionBlocks.css.map */

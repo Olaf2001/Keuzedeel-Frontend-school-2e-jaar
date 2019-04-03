@@ -1,0 +1,82 @@
+@import 'standardStyling';
+
+.subtitle {
+  font-size: 22px;
+  color: $accentColor;
+}
+
+.block, .blockInvert {
+  padding: 100px 10%;
+  display: flex;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+}
+
+.block {
+  background: linear-gradient(to top right, $accentColor 0%, $white 55%);
+  color: $black;
+
+  &:nth-child(3) {
+    background: linear-gradient(to bottom right, $accentColor 0%, $white 55%);
+  }
+
+  & .rightSide {
+    width: 60%;
+
+    @include tablet {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  & .leftSide {
+    width: 40%;
+
+    @include tablet {
+      order: 2;
+      margin: 20px auto 0;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include phone {
+      width: 60%;
+    }
+  }
+}
+
+.blockInvert {
+  background-color: $black;
+  color: $white;
+
+  & .rightSide {
+    width: 40%;
+
+    @include tablet {
+      order: 2;
+      margin: 20px auto 0;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include phone {
+      width: 60%;
+    }
+  }
+
+  & .leftSide {
+    width: 60%;
+
+    @include tablet {
+      width: 100%;
+      order: 1;
+    }
+  }
+}
+

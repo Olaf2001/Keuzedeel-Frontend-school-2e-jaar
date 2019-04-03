@@ -1,0 +1,57 @@
+@import 'footer.scss';
+@import 'navigation.scss';
+@import 'slider.scss';
+@import 'sectionBlocks.scss';
+@import 'gridBlocks.scss';
+@import 'aside.scss';
+
+* {
+  font: {
+    family: Calibri, Arial, Helvetica, sans-serif;
+    size: $font-size;
+  }
+
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titleForDocumentOutline {
+  display: none;
+}
+
+.img {
+  width: 70%;
+
+  @if $image-styling == 'true' {
+    border-radius: 5% 25%;
+  } @else {
+    border-radius: 5px;
+  }
+}
+
+.button {
+  width: 100px;
+  height: 53px;
+  padding: 10px;
+  margin-top: -1px;
+  border: none;
+  border-radius: 5px;
+  color: $black;
+  background-color: $accentColor;
+  font: {
+    size: 16px;
+    weight: 900;
+  }
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $accentColor;
+    background: none;
+    color: $accentColor;
+    transition-duration: 1s;
+  }
+}

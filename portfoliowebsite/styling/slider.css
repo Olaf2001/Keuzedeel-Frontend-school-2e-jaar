@@ -1,0 +1,20 @@
+.slider {
+  background: linear-gradient(to bottom, #111, #fff);
+  width: 100%;
+}
+.sliderImage {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media (max-width: 1100px) {
+  .sliderImage {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=slider.css.map */

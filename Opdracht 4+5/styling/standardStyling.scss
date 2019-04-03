@@ -10,6 +10,13 @@ $facebookBlue: #3B5998;
 $youTubeRed: #bb0000;
 $instagramBackground: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 
+$iconsInFooter: (
+  facebook: $facebookBlue,
+  instagram: $instagramBackground,
+  youtube: $youTubeRed,
+  snapchat-ghost: $snapchatYellow
+);
+
 $tabletMaxSize: 1100px;
 $phoneMaxSize: 550px;
 
@@ -47,10 +54,14 @@ $image-styling: 'true';
 
 
 //notes
+
+// Het gebruik van de each loop en @extend is te vinden in de gridBlcoks, ook zit de extendsloop
+// in de footer.scss
+
 // de if else statement in de main.scss is eigenlijk nutteloos, want het zou makkelijker zijn om
 // zelf de code aan te passen, maar in de opdracht staat dat je de if - else moet gebruiken dus
 // vandaar.
-// Voor de for loop geld eigenlijk hetzelfde. Deze is alleen handig als je classnamen hebt met
+// Voor de for en while loop geld eigenlijk hetzelfde. Deze is alleen handig als je classnamen hebt met
 // link1, link2, link3 enz. Dit is niet handig, want dan wordt er meer code gecompiled, als dat je
 // ze allemaal dezelfde classname geef. Als je namelijk een specifiek blok wilt stijlen kan je ook
 // &nth-child(getal van de hoeveelste class) gebruiken, wat dus het schrijven van de for loop doet

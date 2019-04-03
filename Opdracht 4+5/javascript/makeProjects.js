@@ -8,7 +8,7 @@ function MakeProjects(projectName, linkToProjects, description) {
                     </div> \
                    <div id='modal" + this.projectName + "' class='modal'>\
                         <div class='modalContent'>\
-                            <h3 class='smallTitle'>" + this.projectName + "</h3> \
+                            <div class='smallTitle'>" + this.projectName + "</div> \
                             <p class='modalDescription'>" + this.description + "</p> \
                             <div class='modalBottom'> \
                                 <button id='modalButton"+ this.projectName +"' class='button'>Sluit Pop-up</button> \

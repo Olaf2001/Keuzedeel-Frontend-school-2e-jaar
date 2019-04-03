@@ -9,8 +9,7 @@ function navigation() {
                     "+navLinks+" \
                 </div>";
 
-    var mobilenav = "<h2 class='titleForDocumentOutline'>Main Navigation</h2> \
-                     <div class='navContent'>\
+    var mobilenav = "<div class='navContent'>\
                         <button id='navButton' class='hamburger'><i class='fa fa-bars'></i></button> \
                         <img class='navLogo' src='../images/logo.png' alt='logo'> \
                      </div> \

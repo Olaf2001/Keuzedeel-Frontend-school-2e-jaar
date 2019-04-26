@@ -12,7 +12,7 @@ function MakeProjects(projectName, linkToProjects, description) {
                             <p class='modalDescription'>" + this.description + "</p> \
                             <div class='modalBottom'> \
                                 <button id='modalButton"+ this.projectName +"' class='button'>Sluit Pop-up</button> \
-                                <a class='link' href='" + this.linkToProject + "'> \
+                                <a target='_blank' class='link' href='" + this.linkToProject + "'> \
                                     Ga naar Github om het project te bekijken \
                                 </a>\
                             </div> \
@@ -46,12 +46,20 @@ function ProjectList() {
     };
 }
 
-var project1 = new MakeProjects('Project1','www.google.nl','beschrijving project1');
-var project2 = new MakeProjects('Project2','een link van project 1','beschrijving project2');
-var project3 = new MakeProjects('Project3','een link van project 1','beschrijving project3');
-var project4 = new MakeProjects('Project4','een link van project 1','beschrijving project4');
-var project5 = new MakeProjects('Project5','een link van project 1','beschrijving project3');
-var project6 = new MakeProjects('Project6','een link van project 1','beschrijving project6');
+var project1_description = 'In dit project was het de bedoeling om OOP te leren en dat hebben we \
+    met simpele opdrachtjes gedaan';
+var project2_description = 'In dit project gingen we meer leren over Frontend development. Het \
+    begon met kleine opdrachtjes en dat werd uiteindelijk een portfoliowebsite maken waar steeds \
+    meer opdrachtjes bij kwamen';
+var project3_description = 'In dit project was het de bedoeling om Laravel te werken.';
+var project4_description = 'In dit project moesten we in groepjes van 3 met Laravel een website \
+    gaan maken. Wij hebben als een gropeje besloten om een fictief pretpark te maken genaamd \
+    HappyLand';
+
+var project1 = new MakeProjects('OOP basis','https://github.com/ZadkineICT/oop2018-2019-Olaf2001', project1_description);
+var project2 = new MakeProjects('Keuzedeel Frontend','https://github.com/TechniekCollegeRotterdam/keuzedeel-frontend-2019-Olaf2001', project2_description);
+var project3 = new MakeProjects('MVC basis','https://github.com/ZadkineICT/mvc-basis-2019-Olaf2001', project3_description);
+var project4 = new MakeProjects('MVC project','https://github.com/ZadkineICT/mvc-project-2019-team-robert-mitchell-olaf', project4_description);
 
 var projectList = new ProjectList();
 
@@ -59,8 +67,6 @@ projectList.addProject(project1);
 projectList.addProject(project2);
 projectList.addProject(project3);
 projectList.addProject(project4);
-projectList.addProject(project5);
-projectList.addProject(project6);
 
 var projectBlock = '';
 var projectNames = [];

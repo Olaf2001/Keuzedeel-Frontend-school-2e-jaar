@@ -37,7 +37,7 @@
     order: 2;
     margin: 20px auto 0;
   }
-  .block .leftSide img {
+  .block .leftSide .img {
     width: 100%;
   }
 }
@@ -54,13 +54,17 @@
 .blockInvert .rightSide {
   width: 40%;
 }
+.blockInvert .rightSide .img {
+  margin-left: 30%;
+}
 @media (max-width: 1100px) {
   .blockInvert .rightSide {
     order: 2;
     margin: 20px auto 0;
   }
-  .blockInvert .rightSide img {
+  .blockInvert .rightSide .img {
     width: 100%;
+    margin: unset;
   }
 }
 @media (max-width: 550px) {

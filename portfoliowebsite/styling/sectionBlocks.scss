@@ -38,7 +38,7 @@
       order: 2;
       margin: 20px auto 0;
 
-      & img {
+      & .img {
         width: 100%;
       }
     }
@@ -56,12 +56,17 @@
   & .rightSide {
     width: 40%;
 
+    & .img {
+      margin-left: 30%;
+    }
+
     @include tablet {
       order: 2;
       margin: 20px auto 0;
 
-      & img {
+      & .img {
         width: 100%;
+        margin: unset;
       }
     }
 

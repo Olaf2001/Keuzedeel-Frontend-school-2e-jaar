@@ -24,10 +24,10 @@ function footer() {
                     <div class='socialMediaIcons'> \
                         <h3 class='titleForDocumentOutline'>Social Media</h3> \
                         <div class='socialMedia'> \
-                            <a href='#' class='fa fa-facebook'></a> \
-                            <a href='#' class='fa fa-instagram'></a> \
-                            <a href='#' class='fa fa-snapchat-ghost'></a> \
-                            <a href='#' class='fa fa-youtube'></a> \
+                            <a target='_blank' href='https://www.facebook.com/olaf.kramer.142687' class='fa fa-facebook'></a> \
+                            <a target='_blank' href='https://www.instagram.com/_olaf_33/' class='fa fa-instagram'></a> \
+                            <a target='_blank' href='https://www.snapchat.com/l/nl-nl/' class='fa fa-snapchat-ghost'></a> \
+                            <a target='_blank' href='https://www.youtube.com/channel/UCOwtX-lFEjBAjf8JaQgyVvA?view_as=subscriber' class='fa fa-youtube'></a> \
                         </div> \
                     </div> \
                     <div class='logo'> \

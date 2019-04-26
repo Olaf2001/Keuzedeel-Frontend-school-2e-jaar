@@ -1,10 +1,10 @@
 var number;
 var automatic;
 var image = [];
-image[1] = '../images/code1.jpg';
-image[2] = '../images/code2.jpg';
-image[3] = '../images/code3.jpg';
-image[4] = '../images/code4.jpg';
+image[1] = '../images/olaf2.jpg';
+image[2] = '../images/coding1.jpg';
+image[3] = '../images/website.jpg';
+image[4] = '../images/laptop.jpg';
 
 function next() {
     number++;

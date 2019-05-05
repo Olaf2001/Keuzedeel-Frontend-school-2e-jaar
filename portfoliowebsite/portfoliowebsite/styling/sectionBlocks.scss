@@ -5,8 +5,12 @@
   color: $accentColor;
 }
 
-.block, .blockInvert {
+.sitemap {
   padding: 100px 10%;
+}
+
+.block, .blockInvert {
+  @extend .sitemap;
   display: flex;
 
   @include tablet {
@@ -17,6 +21,17 @@
 .block {
   background: linear-gradient(to top right, $accentColor 0%, $white 55%);
   color: $black;
+
+  & .sitemapList {
+    list-style: disclosure-closed;
+    color: $accentColor;
+
+    & .listItemLink {
+      @include setLinkColors($black, $accentColor);
+      padding: 10px 0;
+      height: 20px;
+    }
+  }
 
   &:nth-child(3) {
     background: linear-gradient(to bottom right, $accentColor 0%, $white 55%);

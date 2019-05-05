@@ -47,6 +47,16 @@ $h3-title-size: $h2-title-size + 3px;
   }
 }
 
+@mixin setLinkColors($normal-color, $hover-color) {
+  text-decoration: none;
+  color: $normal-color;
+
+  &:hover {
+    text-decoration: underline;
+    color: $hover-color;
+  }
+}
+
 //if else statement, vul achter elke variabel true of false in.
 
 $image-styling: 'true';

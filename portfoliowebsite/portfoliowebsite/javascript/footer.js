@@ -4,13 +4,16 @@ function footer() {
                         <h3 class='footerTitle'>Links</h3> \
                         <ul class='linksList'> \
                             <li class='listItem'> \
-                                <a class='listItemLink' href='index.html'>Home</a> \
+                                <a class='listItemLink' href='./'>Home</a> \
                             </li> \
                             <li class='listItem'> \
-                                <a class='listItemLink' href='contact.html'>Contact</a> \
+                                <a class='listItemLink' href='./contact'>Contact</a> \
                             </li> \
                             <li class='listItem'> \
-                                <a class='listItemLink' href='projects.html'>Projects</a> \
+                                <a class='listItemLink' href='./projecten'>Projecten</a> \
+                            </li> \
+                            <li class='listItem'> \
+                                <a class='listItemLink' href='./sitemap'>Sitemap</a> \
                             </li> \
                         </ul> \
                     </div> \
@@ -32,7 +35,7 @@ function footer() {
                     </div> \
                     <div class='logo'> \
                         <h3 class='titleForDocumentOutline'>Logo</h3> \
-                        <img class='footerLogo' src='../images/logo.png' alt='logo'> \
+                        <img class='footerLogo' src='./portfoliowebsite/images/logo.png' alt='logo'> \
                     </div>\
                     <div class='copyrightText'> \
                         &copy; Olaf Kramer 2019\

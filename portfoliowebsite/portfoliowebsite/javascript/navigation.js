@@ -1,17 +1,17 @@
 function navigation() {
-    var navLinks = "<a href='index.html' class='nav-link'>Home</a> \
-                    <a href='contact.html' class='nav-link'>Contact</a> \
-                    <a href='projects.html' class='nav-link'>Projects</a>";
+    var navLinks = "<a href='./' class='nav-link'>Home</a> \
+                    <a href='./contact' class='nav-link'>Contact</a> \
+                    <a href='./projecten' class='nav-link'>Projecten</a>";
 
     var nav =   "<h2 class='titleForDocumentOutline'>Main Navigation</h2> \
                 <div class='nav-links-list'> \
-                    <img class='navLogo' src='../images/logo.png' alt='logo'> \
+                    <img class='navLogo' src='./portfoliowebsite/images/logo.png' alt='logo'> \
                     "+navLinks+" \
                 </div>";
 
     var mobilenav = "<div class='navContent'>\
                         <button id='navButton' class='hamburger'><i class='fa fa-bars'></i></button> \
-                        <img class='navLogo' src='../images/logo.png' alt='logo'> \
+                        <img class='navLogo' src='./portfoliowebsite/images/logo.png' alt='logo'> \
                      </div> \
                      <div id='navLinks' class='nav-links-list'> \
                      "+navLinks+" \

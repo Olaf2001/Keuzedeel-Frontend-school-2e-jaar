@@ -23,6 +23,10 @@
   @include phone {
     grid-template-columns: auto;
   }
+
+  & .listItemLink {
+    @include setLinkColors($white, $accentColor)
+  }
 }
 
 .linksList {
@@ -31,16 +35,6 @@
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-.listItemLink {
-  text-decoration: none;
-  color: white;
-
-  &:hover {
-  text-decoration: underline;
-  color: $accentColor;
-  }
 }
 
 .footerTitle {

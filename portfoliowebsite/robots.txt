@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: ./images/
+Disallow: ./javascript/
+Disallow: ./styling/
+Sitemap: https://olafkramer.000webhostapp.com/sitemap

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139245506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139245506-1', { 'optimize_id': 'GTM-KB8DSNX'});
+    </script>
+    <title>Olaf Kramer | Home</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' type='text/css' href='../styling/main.css'>
+    <meta name="description" content="Op deze website is er van alles te vinden over Olaf Kramer">
+    <meta name="keywords" content="Olaf Kramer">
+    <link rel='stylesheet' type='text/css' href='./portfoliowebsite/styling/main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Olaf Kramer</title>
 </head>
 <body>
     <h1 class='titleForDocumentOutline'>Portfoliowebsite Olaf Kramer Home Page</h1>
@@ -18,7 +27,7 @@
     <main>
         <article class='block'>
             <div class='leftSide'>
-                <img class='img' src='../images/olaf.jpg' alt='foto van mij'>
+                <img class='img' src='./portfoliowebsite/images/olaf.jpg' alt='foto van Olaf Kramer'>
             </div>
             <div class='rightSide'>
                 <h2 class='subtitle'>Olaf Kramer</h2>
@@ -40,29 +49,29 @@
                 <h2 class='subtitle'>Projects</h2>
                 <p>Wilt u mijn projecten zien? Hier kunt u gelijk de link op gitHub vinden die naar
                 het project toegaat, zo kunt u zien wat ik allemaal al heb geprogrammerd.</p>
-                <a href="projects.html">
+                <a href="./projecten">
                     <button class='button'>Lees Meer</button>
                 </a>
             </div>
             <div class='rightSide'>
-                <img class='img' src='../images/projects.jpg' alt='project foto'>
+                <img class='img' src='./portfoliowebsite/images/projects.jpg' alt='project foto'>
             </div>
         </section>
         <section class='block'>
             <div class='leftSide'>
-                <img class='img' src='../images/contact.png' alt='contact foto'>
+                <img class='img' src='./portfoliowebsite/images/contact.png' alt='contact foto'>
             </div>
             <div class='rightSide'>
                 <h2 class='subtitle'>Contact</h2>
                 <p>Heeft u interesse in mij? Hier kunt u al mijn gegevens vinden</p>
-                <a href="contact.html">
+                <a href="./contact">
                     <button class='button'>Lees Meer</button>
                 </a>
             </div>
         </section>
     </main>
     <aside class='sideBlock'>
-        <h2 class='titleForDocumentOutline'>Laatste nieuws</h2>
+        <h2 class='subTitle'>Laatste nieuws</h2>
         <div class='asideGrid'>
             <div class='asideBlock'>
                 <h3 class='smallTitle'>Portfoliowebsite</h3>
@@ -90,8 +99,8 @@
     </aside>
     <footer class='footer' id='footer'></footer>
     
-    <script type='text/javascript' src='../javascript/slider.js'></script>
-    <script type='text/javascript' src='../javascript/navigation.js'></script>
-    <script type='text/javascript' src='../javascript/footer.js'></script>
+    <script type='text/javascript' src='./portfoliowebsite/javascript/slider.js'></script>
+    <script type='text/javascript' src='./portfoliowebsite/javascript/navigation.js'></script>
+    <script type='text/javascript' src='./portfoliowebsite/javascript/footer.js'></script>
 </body>
 </html>

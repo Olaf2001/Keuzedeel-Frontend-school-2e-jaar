@@ -4,4 +4,4 @@ RewriteRule ^projecten/?$ portfoliowebsite/html/projects.html [NC]
 RewriteRule ^sitemap/?$ portfoliowebsite/html/sitemap.html [NC]
 RewriteRule ^/?$ portfoliowebsite/html/index.html [NC]
 RewriteRule ^sitemap/xml?$ sitemap.xml [NC]
-ErrorDocument 404 ./portfoliowebsite/html/error.html
+ErrorDocument 404 /portfoliowebsite/html/error.html

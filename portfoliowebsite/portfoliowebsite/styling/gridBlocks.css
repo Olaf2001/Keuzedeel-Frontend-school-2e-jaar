@@ -20,7 +20,7 @@
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .projectsGrid, .asideGrid, .contactGrid {
     grid-template-columns: auto;
   }
@@ -34,7 +34,7 @@
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .contactGrid {
     grid-template-columns: auto;
   }
@@ -49,7 +49,7 @@
     grid-template-columns: repeat(2, auto);
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .asideGrid {
     grid-template-columns: auto;
   }
@@ -59,7 +59,7 @@
   background: linear-gradient(to top left, #f09433 0%, #111 30%);
   color: #fff;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
   border-radius: 3px;
   border: 1px solid #111;
 }
@@ -68,7 +68,7 @@
   background: linear-gradient(to top left, #f09433 0%, #111 30%);
   color: #fff;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
   border-radius: 3px;
   border: 1px solid #111;
 }
@@ -77,7 +77,7 @@
   background: linear-gradient(to top left, #f09433 0%, #111 30%);
   color: #fff;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
   border-radius: 3px;
   border: 1px solid #111;
 }
@@ -97,13 +97,30 @@
 @media (max-width: 1100px) {
   .contactBlock:nth-child(3) {
     grid-column: 1/span 2;
+    grid-row: 2/span 1;
+  }
+}
+@media (max-width: 1000px) {
+  .contactBlock:nth-child(3) {
+    grid-column: 1/span 1;
     grid-row: 3/span 1;
   }
 }
-@media (max-width: 550px) {
-  .contactBlock:nth-child(3) {
+
+.contactBlock:nth-child(4) {
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+}
+@media (max-width: 1100px) {
+  .contactBlock:nth-child(4) {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+  }
+}
+@media (max-width: 1000px) {
+  .contactBlock:nth-child(4) {
     grid-column: 1/span 1;
-    grid-row: 2/span 5;
+    grid-row: 4/span 1;
   }
 }
 
@@ -138,7 +155,7 @@
   padding: 15px 0;
   border-radius: 15px 15px 0 0;
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .modalContent {
     width: 90%;
   }

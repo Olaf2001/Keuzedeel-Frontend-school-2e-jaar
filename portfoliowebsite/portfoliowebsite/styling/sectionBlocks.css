@@ -3,8 +3,11 @@
   color: #f09433;
 }
 
-.block, .blockInvert {
+.sitemap, .block, .blockInvert {
   padding: 100px 10%;
+}
+
+.block, .blockInvert {
   display: flex;
 }
 @media (max-width: 1100px) {
@@ -16,6 +19,20 @@
 .block {
   background: linear-gradient(to top right, #f09433 0%, #fff 55%);
   color: #111;
+}
+.block .sitemapList {
+  list-style: disclosure-closed;
+  color: #f09433;
+}
+.block .sitemapList .listItemLink {
+  text-decoration: none;
+  color: #111;
+  padding: 10px 0;
+  height: 20px;
+}
+.block .sitemapList .listItemLink:hover {
+  text-decoration: underline;
+  color: #f09433;
 }
 .block:nth-child(3) {
   background: linear-gradient(to bottom right, #f09433 0%, #fff 55%);
@@ -41,7 +58,7 @@
     width: 100%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .block .leftSide {
     width: 60%;
   }
@@ -67,7 +84,7 @@
     margin: unset;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .blockInvert .rightSide {
     width: 60%;
   }

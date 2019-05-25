@@ -597,6 +597,78 @@
   background: linear-gradient(to top left, #f09433 0%, #fff 55%);
 }
 
+.animation {
+  background: #f09433;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.carImg {
+  width: 200px;
+  height: auto;
+}
+@media (max-width: 550px) {
+  .carImg {
+    width: 125px;
+    height: auto;
+  }
+}
+
+.tyre1, .tyre2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-image: url("../images/tyre.png");
+  background-position: center center;
+  background-size: 23px 23px;
+  border: 5px solid #111;
+  margin-left: 27px;
+  margin-top: -33px;
+  animation-name: rotatingTyre;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.tyre2 {
+  margin-left: 148px;
+  margin-top: -30px;
+}
+
+@keyframes rotatingTyre {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.finish {
+  align-self: flex-end;
+}
+
+.stick {
+  width: 3px;
+  height: 25px;
+  background-color: #111;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.flag {
+  margin-right: 50px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/flag.png");
+  background-position: center center;
+  background-size: 40px 40px;
+}
+
 * {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;

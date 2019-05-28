@@ -598,12 +598,19 @@
 }
 
 .animation {
+  width: calc(100% - 40px);
   background: #f09433;
   display: flex;
   padding: 20px;
   justify-content: space-between;
 }
 
+.car {
+  animation-name: carMoving;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .carImg {
   width: 200px;
   height: auto;
@@ -615,6 +622,17 @@
   }
 }
 
+@keyframes carMoving {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 80%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
 .tyre1, .tyre2 {
   width: 20px;
   height: 20px;
@@ -667,8 +685,25 @@
   background-image: url("../images/flag.png");
   background-position: center center;
   background-size: 40px 40px;
+  animation-name: wavingFlag;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes wavingFlag {
+  0% {
+    background-size: 40px 40px;
+    width: 40px;
+  }
+  50% {
+    background-size: 50px 40px;
+    width: 50px;
+  }
+  100% {
+    background-size: 40px 40px;
+    width: 40px;
+  }
+}
 * {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;

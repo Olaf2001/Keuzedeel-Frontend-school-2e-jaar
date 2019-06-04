@@ -20,7 +20,7 @@ function footer() {
                     <div class='footerSearchbar'> \
                         <h3 class='titleForDocumentOutline'>Search Projects</h3> \
                         <form class='searchbar'> \
-                            <label>Zoeken</label> \
+                            <label class='searchTitle'>Zoeken</label> \
                             <input disabled class='search' type='text' placeholder='Zoekfunctie nog gereed'> \
                             <button disabled class='button' type='submit'>Zoeken</button> \
                         </form> \

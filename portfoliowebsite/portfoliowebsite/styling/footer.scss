@@ -125,6 +125,10 @@
     border-color: $accentColor;
     transition-duration: 1s;
   }
+
+  &Title {
+    display: none;
+  }
 }
 
 .logo {

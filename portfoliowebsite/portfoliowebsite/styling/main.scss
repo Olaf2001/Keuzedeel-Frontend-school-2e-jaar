@@ -4,13 +4,14 @@
 @import 'sectionBlocks.scss';
 @import 'gridBlocks.scss';
 @import 'aside.scss';
+@import 'animation.scss';
 
 * {
   font: {
     family: Calibri, Arial, Helvetica, sans-serif;
     size: $font-size;
   }
-
+  line-height: 1.5;
 }
 
 body {

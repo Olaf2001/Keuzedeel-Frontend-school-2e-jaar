@@ -10,7 +10,7 @@ function navigation() {
                 </div>";
 
     var mobilenav = "<div class='navContent'>\
-                        <button id='navButton' class='hamburger'><i class='fa fa-bars'></i></button> \
+                        <button id='navButton' class='hamburger'><i class='fa fa-bars'> Menu</i></button> \
                         <img class='navLogo' src='./portfoliowebsite/images/logo.png' alt='logo'> \
                      </div> \
                      <div id='navLinks' class='nav-links-list'> \

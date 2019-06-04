@@ -1,0 +1,91 @@
+@import 'standardStyling';
+
+#mobileNav {
+  display: none;
+
+  @include phone {
+    display: block;
+  }
+}
+
+#nav {
+  display: block;
+
+  @include phone {
+    display: none;
+  }
+}
+
+.nav {
+  width: 100%;
+  background: linear-gradient(to bottom left, $accentColor, $black 35%);
+  border-bottom: 1px solid $accentColor;
+
+  @include phone {
+    background: none;
+  }
+}
+
+.navContent {
+  display: flex;
+  background: linear-gradient(to bottom left, $accentColor, $black 35%);
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid $accentColor;
+  justify-content: space-between;
+}
+
+.nav-links-list {
+  width: calc(100% - 20px);
+  list-style: none;
+  display: flex;
+  padding: 10px 0 10px 20px;
+  flex-direction: row;
+  align-items: center;
+
+  @include phone {
+    width: 100%;
+    background-color: $black;
+    padding: 0;
+  }
+}
+
+.nav-link {
+  padding: 15px;
+  margin: 0 20px;
+  color: $white;
+  text-decoration: none;
+  font-weight: 700;
+
+  @include phone {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  &:hover {
+    color: $accentColor;
+
+    @include phone {
+      background-color: $accentColor;
+      color: $black;
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.navLogo {
+  height: 75px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  & .fa {
+    background: none;
+    color: $accentColor;
+  }
+}

@@ -51,22 +51,19 @@ var project1_description = 'In dit project was het de bedoeling om OOP te leren 
 var project2_description = 'In dit project gingen we meer leren over Frontend development. Het \
     begon met kleine opdrachtjes en dat werd uiteindelijk een portfoliowebsite maken waar steeds \
     meer opdrachtjes bij kwamen';
-var project3_description = 'In dit project was het de bedoeling om Laravel te werken.';
-var project4_description = 'In dit project moesten we in groepjes van 3 met Laravel een website \
+var project3_description = 'In dit project moesten we in groepjes van 3 met Laravel een website \
     gaan maken. Wij hebben als een gropeje besloten om een fictief pretpark te maken genaamd \
     HappyLand';
 
-var project1 = new MakeProjects('OOP basis','https://github.com/ZadkineICT/oop2018-2019-Olaf2001', project1_description);
-var project2 = new MakeProjects('Keuzedeel Frontend','https://github.com/TechniekCollegeRotterdam/keuzedeel-frontend-2019-Olaf2001', project2_description);
-var project3 = new MakeProjects('MVC basis','https://github.com/ZadkineICT/mvc-basis-2019-Olaf2001', project3_description);
-var project4 = new MakeProjects('MVC project','https://github.com/ZadkineICT/mvc-project-2019-team-robert-mitchell-olaf', project4_description);
+var project1 = new MakeProjects('OOP basis','https://github.com/Olaf2001/Oop-school-2e-jaar', project1_description);
+var project2 = new MakeProjects('Keuzedeel Frontend','https://github.com/Olaf2001/Keuzedeel-Frontend-school-2e-jaar', project2_description);
+var project3 = new MakeProjects('MVC project','https://github.com/Olaf2001/MVC-project-school-2e-jaar', project3_description);
 
 var projectList = new ProjectList();
 
 projectList.addProject(project1);
 projectList.addProject(project2);
 projectList.addProject(project3);
-projectList.addProject(project4);
 
 var projectBlock = '';
 var projectNames = [];

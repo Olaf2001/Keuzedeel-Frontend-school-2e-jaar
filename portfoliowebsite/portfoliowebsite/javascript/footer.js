@@ -21,17 +21,17 @@ function footer() {
                         <h3 class='titleForDocumentOutline'>Search Projects</h3> \
                         <form class='searchbar'> \
                             <label class='searchTitle'>Zoeken</label> \
-                            <input disabled class='search' type='text' placeholder='Zoekfunctie nog gereed'> \
+                            <input disabled class='search' type='text' placeholder='Zoekfunctie nog niet gereed'> \
                             <button disabled class='button' type='submit'>Zoeken</button> \
                         </form> \
                     </div> \
                     <div class='socialMediaIcons'> \
                         <h3 class='titleForDocumentOutline'>Social Media</h3> \
                         <div class='socialMedia'> \
-                            <a target='_blank' href='https://www.facebook.com/olaf.kramer.142687' class='fa fa-facebook'></a> \
-                            <a target='_blank' href='https://www.instagram.com/_olaf_33/' class='fa fa-instagram'></a> \
+                            <a target='_blank' href='https://www.facebook.com' class='fa fa-facebook'></a> \
+                            <a target='_blank' href='https://www.instagram.com' class='fa fa-instagram'></a> \
                             <a target='_blank' href='https://www.snapchat.com/l/nl-nl/' class='fa fa-snapchat-ghost'></a> \
-                            <a target='_blank' href='https://www.youtube.com/channel/UCOwtX-lFEjBAjf8JaQgyVvA?view_as=subscriber' class='fa fa-youtube'></a> \
+                            <a target='_blank' href='https://www.youtube.com' class='fa fa-youtube'></a> \
                         </div> \
                     </div> \
                     <div class='logo'> \
